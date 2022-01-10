@@ -27,9 +27,8 @@ namespace projekt_2___csigaverseny
         {
             InitializeComponent();
 
-            Random rnd = new Random();
             ido = new DispatcherTimer();
-            ido.Interval = TimeSpan.FromSeconds(rnd.NextDouble());
+            ido.Interval = TimeSpan.FromSeconds(0.1);
             ido.Tick += new EventHandler(mitCs);
             ido.Tick += new EventHandler(mCs);
             ido.Tick += new EventHandler(miCs);
@@ -47,7 +46,7 @@ namespace projekt_2___csigaverseny
         {
             Random rnd = new Random();
             ++szam;
-            csigusz3.Margin = new Thickness(szam * 10, 310, 0, 0);
+            csigusz3.Margin = new Thickness(szam * 10, 90, 0, 0);
         }
 
         private void mitCs(object sender, EventArgs e)
@@ -59,8 +58,9 @@ namespace projekt_2___csigaverseny
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             ido.Start();
         }
+
+        
     }
 }
