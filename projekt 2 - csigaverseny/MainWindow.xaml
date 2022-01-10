@@ -5,8 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projekt_2___csigaverseny"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Izgalmas Csiga Championship" Height="600" Width="800">
     <Grid>
-        
+        <Button Content="Start" HorizontalAlignment="Left" Margin="33,10,0,0" VerticalAlignment="Top" Width="101" Height="31"/>
+        <Button Content="Új futam" HorizontalAlignment="Left" Margin="174,10,0,0" VerticalAlignment="Top" Width="101" Height="31"/>
+        <Button Content="Új bajnokság" HorizontalAlignment="Left" Margin="323,10,0,0" VerticalAlignment="Top" Width="100" Height="31"/>
+        <Image HorizontalAlignment="Left" Height="355" Margin="50,62,0,0" VerticalAlignment="Top" Width="628" Source="pack://siteoforigin:,,,/szep"/>
+        <Label Content="A bajnokság állása:" HorizontalAlignment="Left" Margin="16,436,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,1.327" Height="41" Width="118"/>
+        <Image HorizontalAlignment="Left" Height="118" Margin="50,67,0,0" VerticalAlignment="Top" Width="116" Source="csiga1.png"/>
+        <Image HorizontalAlignment="Left" Height="119" Margin="50,185,0,0" VerticalAlignment="Top" Width="116" Source="csiga2.png"/>
+        <Image HorizontalAlignment="Left" Height="118" Margin="50,304,0,0" VerticalAlignment="Top" Width="116" Source="csiga3.png" RenderTransformOrigin="0.491,0.657"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="355" Margin="166,62,0,0" Stroke="White" VerticalAlignment="Top" Width="18"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="7" Margin="50,292,0,0" Stroke="Black" VerticalAlignment="Top" Width="646"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="355" Margin="678,62,0,0" Stroke="White" VerticalAlignment="Top" Width="18"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="7" Margin="50,173,0,0" Stroke="Black" VerticalAlignment="Top" Width="643"/>
+
     </Grid>
 </Window>
