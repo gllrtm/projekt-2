@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace projekt_2___csigaverseny
 {
@@ -20,9 +21,46 @@ namespace projekt_2___csigaverseny
     /// </summary>
     public partial class MainWindow : Window
     {
+        DispatcherTimer ido;
+        int szam = new int();
         public MainWindow()
         {
             InitializeComponent();
+
+            Random rnd = new Random();
+            ido = new DispatcherTimer();
+            ido.Interval = TimeSpan.FromSeconds(rnd.NextDouble());
+            ido.Tick += new EventHandler(mitCs);
+            ido.Tick += new EventHandler(mCs);
+            ido.Tick += new EventHandler(miCs);
+
+        }
+
+        private void mCs(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            ++szam;
+            csigusz2.Margin = new Thickness(szam * 10, 190, 0, 0);
+        }
+
+        private void miCs(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            ++szam;
+            csigusz3.Margin = new Thickness(szam * 10, 310, 0, 0);
+        }
+
+        private void mitCs(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            ++szam;
+            csigusz1.Margin = new Thickness(szam * 10, 70, 0, 0);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            ido.Start();
         }
     }
 }
